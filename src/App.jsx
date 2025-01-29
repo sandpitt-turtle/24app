@@ -10,11 +10,11 @@ function App() {
   return (
     <div>
       <h1>Puppy List</h1>
-      <ul>
-        {puppies.map((puppy) => (
-          <li key={puppy.id}>{puppy.name}</li>
-        ))}
-      </ul>
+      {
+        puppies.map((puppy) => (
+          <p key={puppy.id}>{puppy.name}</p>
+        ))
+      }
     </div>
   );
 }
