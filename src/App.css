@@ -73,9 +73,9 @@ h1 {
 
 .puppy-list {
   background: rgba(0, 0, 0, 0.6);
-  padding: 20px; /* Existing padding */
-  padding-top: 40px; /* Add space inside the panel */
-  margin-top: 50px; /* Moves the entire panel down */
+  padding: 20px; 
+  padding-top: 40px; 
+  margin-top: 50px; 
   border-radius: 10px;
   max-width: 400px;
   text-align: center;
