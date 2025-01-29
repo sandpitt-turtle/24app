@@ -11,6 +11,8 @@ function App() {
 
   return (
     <div className="puppy-list">
+      <img src="/public/logo.webp" alt="Puppy Bowl Logo" className="puppy-logo" />
+
       <h1>Puppy List</h1>
 
   

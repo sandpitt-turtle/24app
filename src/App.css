@@ -61,82 +61,98 @@ body::after {
   z-index: -1;
 }
 
+
+.puppy-logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;  /* Increased size */
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 15px;
+}
+
+
 h1 {
   text-align: center;
   font-weight: bold;
-  padding: 20px;
+  padding: 12px; /* Slightly more padding */
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem; /* Increase font size */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 12px;
 }
-
 
 .puppy-list {
   background: rgba(0, 0, 0, 0.6);
-  padding: 20px; 
-  padding-top: 40px; 
-  margin-top: 50px; 
-  border-radius: 10px;
-  max-width: 400px;
+  padding: 20px; /* Increase padding */
+  padding-top: 35px; /* Slightly more top padding */
+  margin-top: 40px; /* Slightly move it down */
+  border-radius: 12px;
+  max-width: 500px; /* Increase width */
   text-align: center;
 }
+
 
 
 .puppy-name {
   color: rgb(210, 228, 234);
-  font-weight: lighter;
-  font-size: 1.2rem;
-  margin: 10px;
+  font-weight: normal;
+  font-size: 1.3rem; /* Increased font size */
+  margin: 8px; /* Slightly more space between names */
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
 
 .puppy-name:hover {
-  color: #40E0D0 ;
+  color: #40E0D0;
 }
 
 
 .puppy-details {
   margin-top: 20px;
-  padding: 15px;
+  padding: 18px; /* Increase padding */
   border: 1px SOLID #f4b4ea90;
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.2);
-  max-width: 350px;
+  max-width: 400px; /* Increase width */
 }
 
 .puppy-details h2 {
   color: white;
-  font-weight: lighter;
+  font-weight: normal;
+  font-size: 1.2rem;
 }
+
 
 .puppy-details ul {
   list-style: none;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 .puppy-details li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 
 button {
   font-family: "Roboto Condensed", sans-serif;
-  padding: 10px;
+  padding: 12px; /* Increase padding */
+  font-size: 1.1rem; /* Bigger text */
+  border-radius: 8px; /* Slightly rounder buttons */
   border: 1px solid black;
   cursor: pointer;
   color: black;
-  background: linear-gradient(to right, rgba(247, 204, 247, 0.8), rgba(170, 219, 201, 0.8));
+  background: linear-gradient(to right, rgba(247, 204, 247, 0.9), rgba(170, 219, 201, 0.9));
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-
 button:hover {
-  box-shadow: 0 1px 3px grey;
+  box-shadow: 0 2px 4px grey;
 }
-
 
 
 .logo {
