@@ -10,34 +10,31 @@ function App() {
   const featuredPup = puppies.find((pup) => pup.id === featPupId);
 
   return (
-    <div>
+    <div className="puppy-list">
       <h1>Puppy List</h1>
 
-     
+      {/* Render list of puppy names */}
       {puppies.map((puppy) => (
         <p 
           key={puppy.id} 
-          onClick={() => setFeatPupId(puppy.id)} 
-          style={{ cursor: "pointer", color: "blue" }}
+          className="puppy-name"
+          onClick={() => setFeatPupId(puppy.id)}
         >
           {puppy.name}
         </p>
       ))}
 
-
+      {/* Render the selected puppy’s details */}
       {featPupId && featuredPup && (
-        <div style={{ marginTop: "20px", padding: "10px", border: "1px solid black" }}>
+        <div className="puppy-details">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li><strong>Age:</strong> {featuredPup.age}</li>
             <li><strong>Email:</strong> {featuredPup.email}</li>
           </ul>
           
-        
-          <button 
-            onClick={() => setFeatPupId(null)} 
-            style={{ marginTop: "10px", padding: "5px 10px", cursor: "pointer" }}
-          >
+          {/* Clear Selection Button */}
+          <button onClick={() => setFeatPupId(null)}>
             Clear Selection
           </button>
         </div>
