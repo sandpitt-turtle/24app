@@ -11,9 +11,11 @@ function App() {
 
   return (
     <div className="puppy-list">
+      <img src="/public/logo.webp" alt="Puppy Bowl Logo" className="puppy-logo" />
+
       <h1>Puppy List</h1>
 
- 
+      
       {puppies.map((puppy) => (
         <p 
           key={puppy.id} 
@@ -24,7 +26,7 @@ function App() {
         </p>
       ))}
 
-     
+      
       {featPupId && featuredPup && (
         <div className="puppy-details">
           <h2>{featuredPup.name}</h2>
@@ -32,6 +34,7 @@ function App() {
             <li><strong>Age:</strong> {featuredPup.age}</li>
             <li><strong>Email:</strong> {featuredPup.email}</li>
           </ul>
+          
     
           <button onClick={() => setFeatPupId(null)}>
             Clear Selection
