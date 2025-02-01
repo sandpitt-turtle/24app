@@ -10,12 +10,15 @@ function App() {
   const featuredPup = puppies.find((pup) => pup.id === featPupId);
 
   return (
-    <div className="puppy-list">
-      <img src="/public/logo.webp" alt="Puppy Bowl Logo" className="puppy-logo" />
+      <div className="puppy-list">
+     <img 
+      src="/doggo.png" 
+      alt="Puppy Bowl Icon"  
+      className="puppy-logo" 
+    />
 
       <h1>Puppy List</h1>
 
-      
       {puppies.map((puppy) => (
         <p 
           key={puppy.id} 
